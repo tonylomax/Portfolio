@@ -1,0 +1,6 @@
+.test-iframe {
+  width: 50%;
+  height: 25rem;
+  pointer-events: none;
+  overflow: hidden;
+}
