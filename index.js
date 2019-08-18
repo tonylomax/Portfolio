@@ -1,11 +1,13 @@
-var xhr = new XMLHttpRequest();
+let sendButton = document.querySelector("#sendButton");
+
+let xhr = new XMLHttpRequest();
 
 xhr.onreadystatechange = function() {
   if (xhr.readyState == 4 && xhr.status == 200) {
     let response = JSON.parse(xhr.responseText);
-    console.log(response);
+    //console.log(response);
     response.forEach(e => {
-      console.log(e.homepage);
+      //console.log(e.homepage);
     });
   }
 };
