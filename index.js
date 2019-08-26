@@ -1,27 +1,16 @@
-// let sendButton = document.querySelector("#sendButton");
+const iframeContainer = document.querySelector(".iframe__container");
 
-// let xhr = new XMLHttpRequest();
-
-// xhr.onreadystatechange = function() {
-//   if (xhr.readyState == 4 && xhr.status == 200) {
-//     let response = JSON.parse(xhr.responseText);
-//     //console.log(response);
-//     response.forEach(e => {
-//       //console.log(e.homepage);
-//     });
-//   }
-// };
-// xhr.open("GET", `https://api.github.com/users/tonylomax/repos`, true);
-// xhr.send();
-
-const iframeContainer = document.querySelector(".projects__iframes");
-
-let iframePopulator = projURL => {
-  if (projURL) {
+let iframePopulator = proj => {
+  if (proj.homepage) {
     let projectIframe = document.createElement("iframe");
-    projectIframe.src = projURL;
+    //let iframeDesc = document.createElement("p");
+    //iframeDesc.textContent = proj.description;
+    projectIframe.title = "test";
+    projectIframe.src = proj.homepage;
+    projectIframe.scroll = "no";
     projectIframe.classList.add("iframe");
     iframeContainer.appendChild(projectIframe);
+    //iframeContainer.appendChild(iframeDesc);
   }
 };
 
@@ -36,7 +25,6 @@ fetch(url)
   .then(res => {
     console.log(res);
     res.forEach(e => {
-      console.log(e.statuses_url);
-      iframePopulator(e.homepage);
+      iframePopulator(e);
     });
   });

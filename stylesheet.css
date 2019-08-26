@@ -1,6 +1,11 @@
+.iframe__container {
+  display: inline-grid;
+  grid-template-columns: 100% 100%;
+}
+
 .iframe {
-  width: 50%;
-  height: 25rem;
+  width: 100%;
+  height: 25em;
   pointer-events: none;
   overflow: hidden;
 }
