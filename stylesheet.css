@@ -7,13 +7,33 @@ body {
 }
 
 .iframe__container {
+  width: 100%;
   display: inline-grid;
-  grid-template-columns: 100% 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1%;
+  justify-items: stretch;
+  margin-bottom: 10%;
 }
 
-.iframe {
-  width: 100%;
-  height: 25em;
+.unique__iframe {
+  height: 25rem;
+  justify-items: stretch;
   pointer-events: none;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80% 10%;
+  grid-template-areas:
+    "img"
+    "desc";
+}
+
+.unique__iframe__img {
+  height: 20rem;
+  grid-area: img;
+}
+
+.unique__iframe__description {
+  grid-area: desc;
 }
