@@ -2,15 +2,23 @@ const iframeContainer = document.querySelector(".iframe__container");
 
 let iframePopulator = proj => {
   if (proj.homepage) {
-    let projectIframe = document.createElement("iframe");
-    //let iframeDesc = document.createElement("p");
-    //iframeDesc.textContent = proj.description;
-    projectIframe.title = "test";
-    projectIframe.src = proj.homepage;
-    projectIframe.scroll = "no";
-    projectIframe.classList.add("iframe");
-    iframeContainer.appendChild(projectIframe);
-    //iframeContainer.appendChild(iframeDesc);
+    let iframeContainer = document.querySelector(".iframe__container");
+    let iframeImg = document.createElement("iframe");
+    let iframeDesc = document.createElement("p");
+    let uniqueIframeContainer = document.createElement("section");
+
+    iframeImg.classList.add("unique__iframe__img");
+    iframeDesc.classList.add("unique__iframe__description");
+    uniqueIframeContainer.classList.add("unique__iframe");
+
+    iframeImg.src = proj.homepage;
+    iframeDesc.textContent = proj.description;
+    iframeImg.scroll = "no";
+
+    uniqueIframeContainer.appendChild(iframeImg);
+    uniqueIframeContainer.appendChild(iframeDesc);
+
+    iframeContainer.appendChild(uniqueIframeContainer);
   }
 };
 
@@ -23,7 +31,6 @@ fetch(url)
     return data.json();
   })
   .then(res => {
-    console.log(res);
     res.forEach(e => {
       iframePopulator(e);
     });
