@@ -37,3 +37,59 @@ body {
 .unique__iframe__description {
   grid-area: desc;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  line-height: 0.2;
+}
+
+.navbar__title {
+  color: white;
+  margin-left: 1%;
+}
+
+.navbar__links__container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 2%;
+  color: white;
+  justify-content: space-around;
+}
+
+.navbar__links__container > * {
+  font-size: 1.2rem;
+  margin: 2%;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.navbar__links__about {
+}
+
+.navbar__links__projects {
+}
+
+.navbar__links__contact {
+}
