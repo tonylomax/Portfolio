@@ -89,6 +89,22 @@ a:active {
   text-decoration: underline;
 }
 
+.input__firstname {
+  width: 20%;
+}
+
+.input__message {
+  height: ;
+}
+
+.footer {
+  margin-top: 5%;
+  position: absolute;
+  background-color: black;
+  padding: 1.7%;
+  width: 100%;
+}
+
 .navbar__links__about {
 }
 
