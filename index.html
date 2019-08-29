@@ -60,25 +60,31 @@
       </p>
       <form method="POST" action="//www.enformed.io/ci8nq5xw">
         Name:
-        <input name="firstname" type="text" />
+        <input name="firstname" type="text" class="input__firstname" />
         <br /><br />
         Email:
-        <input type="email" name="email" placeholder="Your email" />
+        <input type="email" name="email" placeholder="Your email" class="input__email" />
         <br /><br />
         Message:
-        <input
-          name="message"
-          type="text"
-          placeholder="Type your message here"
-        />
+        <textarea
+        name="message"
+            type="text"
+            name="text"
+            required
+          >
+        </textarea>
         <button id="sendButton" type="submit" value="Send">Send</button>
         <input
           type="hidden"
           name="*redirect"
           value="https://tonylomax.github.io/Portfolio/"
         />
+
+
       </form>
     </section>
+    <footer class="footer"> 
+    </footer>
   </body>
   <script type="text/javascript" src="index.js"></script>
 </html>
