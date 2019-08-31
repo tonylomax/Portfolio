@@ -10,36 +10,17 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.iframe__container {
+.project__container {
   width: 100%;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 1%;
-  justify-items: stretch;
   margin-bottom: 10%;
 }
 
-.unique__iframe {
-  height: 25rem;
-  justify-items: stretch;
-  pointer-events: none;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 80% 10%;
-  grid-template-areas:
-    "img"
-    "desc";
-}
-
-.unique__iframe__img {
-  height: 20rem;
-  grid-area: img;
-}
-
-.unique__iframe__description {
-  grid-area: desc;
+.unique__project {
+  width: 25%;
 }
 
 .navbar {
@@ -69,7 +50,7 @@ body {
 }
 
 a:link {
-  color: green;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -84,7 +65,6 @@ a:hover {
 }
 
 a:active {
-  color: yellow;
   background-color: transparent;
   text-decoration: underline;
 }
