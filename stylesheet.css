@@ -73,7 +73,6 @@ a:active {
 
 .project__container {
   max-width: 75%;
-
   margin: auto;
   grid-template-columns: 50% 50%;
   display: grid;
