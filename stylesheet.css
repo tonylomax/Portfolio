@@ -2,25 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
+.navbar__title {
   font-family: "Raleway", sans-serif;
 }
 
 body {
   font-family: "Raleway", sans-serif;
-}
-
-.project__container {
-  width: 100%;
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1%;
-  margin-bottom: 10%;
-}
-
-.unique__project {
-  width: 25%;
 }
 
 .navbar {
@@ -68,28 +55,38 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
-
+.contact {
+  margin-left: 1%;
+}
 .input__firstname {
   width: 20%;
 }
 
-.input__message {
-  height: ;
+.about {
+  margin-left: 1%;
 }
 
-.footer {
+.projects {
+  margin-bottom: 15%;
+  margin-left: 1%;
+}
+
+.project__container {
+  max-width: 75%;
+
+  margin: auto;
+  grid-template-columns: 50% 50%;
+  display: grid;
+  grid-gap: 5%;
+}
+
+.unique__project {
+}
+
+/* .footer {
   margin-top: 5%;
   position: absolute;
   background-color: black;
   padding: 1.7%;
   width: 100%;
-}
-
-.navbar__links__about {
-}
-
-.navbar__links__projects {
-}
-
-.navbar__links__contact {
-}
+} */
