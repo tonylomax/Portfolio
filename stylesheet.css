@@ -1,14 +1,15 @@
+/* /////////// Main //////////// */
+
 html {
   scroll-behavior: smooth;
 }
 
-.navbar__title {
-  font-family: "Raleway", sans-serif;
-}
-
 body {
   font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
 }
+
+/* /////////// Navbar //////////// */
 
 .navbar {
   display: flex;
@@ -18,6 +19,7 @@ body {
 }
 
 .navbar__title {
+  font-family: "Raleway", sans-serif;
   color: white;
   margin-left: 1%;
 }
@@ -36,34 +38,60 @@ body {
   margin: 2%;
 }
 
-a:link {
+.navbar__links:link {
   color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:visited {
+.navbar__links:visited {
   color: white;
   text-decoration: none;
 }
 
-a:hover {
+.navbar__links:hover {
   text-decoration: underline;
 }
 
-a:active {
+.navbar__links:active {
   background-color: transparent;
   text-decoration: underline;
 }
-.contact {
-  margin-left: 1%;
-}
-.input__firstname {
-  width: 20%;
-}
+
+/* /////////// About //////////// */
 
 .about {
   margin-left: 1%;
+}
+
+.about__link {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.about__link:hover {
+  text-decoration: underline;
+}
+
+.about__link:active {
+  text-decoration: underline;
+}
+
+/* /////////// Projects //////////// */
+
+.project__link {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.project__link:hover {
+  text-decoration: underline;
+}
+
+.project__link:active {
+  text-decoration: underline;
 }
 
 .projects {
@@ -76,15 +104,6 @@ a:active {
   grid-template-columns: 25% 25% 25% 25%;
   display: grid;
   grid-gap: 5%;
-}
-
-.footer {
-  margin-top: 5%;
-  position: absolute;
-  background-color: black;
-  color: white;
-  padding: 1.7%;
-  width: 100%;
 }
 
 figure.hover-animation {
@@ -167,19 +186,21 @@ figure.hover-animation.hover h2 {
   transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
 }
 
+/* /////////// Contact form //////////// */
+
 .contact {
-  /* width: 360px;
-  padding: 8% 0 0;
-  margin: auto; */
+  margin-left: 1%;
+}
+.input__firstname {
+  width: 20%;
 }
 
 .form {
   position: relative;
-  /* z-index: 1; */
   background: #ffffff;
   max-width: 75%;
-  margin: 0 auto 5%;
-  padding: 5%;
+  margin: 0 auto 1%;
+  padding: 3%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
@@ -216,6 +237,19 @@ figure.hover-animation.hover h2 {
 .label__message {
   padding-bottom: 1%;
   display: block;
+  font-size: 1.5rem;
+}
+
+.label__name {
+  padding-bottom: 1%;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.label__email {
+  padding-bottom: 1%;
+  display: block;
+  font-size: 1.5rem;
 }
 
 .input__message {
@@ -225,4 +259,16 @@ figure.hover-animation.hover h2 {
   position: relative;
   border: 1px solid #e6e6e6;
   border-radius: 2px;
+}
+
+/* /////////// Navbar //////////// */
+
+.footer {
+  text-align: center;
+  margin-top: 5%;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 1.7%;
+  width: 96.5%;
 }
