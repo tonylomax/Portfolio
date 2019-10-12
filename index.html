@@ -89,13 +89,13 @@
       </section>      
     </section>
 
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
       <h2>
         Get in touch
       </h2>
-      <form method="POST" action="//www.enformed.io/ci8nq5xw">
+      <form class="contact__form" method="POST" action="//www.enformed.io/ci8nq5xw">
         Name:
-        <input name="firstname" type="text" class="input__firstname" />
+        <input name="name" type="text" class="input__name" />
         <br /><br />
         Email:
         <input type="email" name="email"  class="input__email" />
@@ -116,9 +116,42 @@
         />
 
 
-      </form>
+      </form> -->
+
+
+
+      <section class="contact">
+        <div class="form">
+         <h2> Contact</h2>
+          <form class="login-form" method="POST" action="//www.enformed.io/ci8nq5xw">
+            Name:
+            <input required name="name" type="text" class="input__name" />
+            Email:
+            <input required type="email" name="email"  class="input__email" />
+            <label class="label__message" for="message">Message *</label>
+        <textarea
+        class="input__message"
+        required
+        name="message"
+            type="text"
+            name="text"
+            required
+          >
+        </textarea>
+            <button>Send</button>
+            <input
+          type="hidden"
+          name="*redirect"
+          value="https://tonylomax.github.io/Portfolio/"
+        />
+          </form>
+        </div>
+      </section>
+
+
     </section>
     <footer class="footer"> 
+      Designed and built by Tony Lomax
     </footer>
   </body>
   <script type="text/javascript" src="index.js"></script>
