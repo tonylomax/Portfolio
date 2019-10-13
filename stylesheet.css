@@ -115,7 +115,7 @@ figure.hover-animation {
   font-family: "Raleway", Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  width: 60%;
+  /* width: 60%; */
   background: #000000;
   color: #ffffff;
   text-align: center;
@@ -280,19 +280,31 @@ figure.hover-animation.hover h2 {
 /* @media only screen and (max-width: 900px) {
   .navbar__title {
     font-size: 1.5em;
-  }
+  } */
 
-  body {
+/* body {
     background-color: lightblue;
   }
-}
-
-@media only screen and (max-width: 730px) {
-  .navbar__title {
-    font-size: 1.2em;
-  }
-
-  body {
-    background-color: lightgoldenrodyellow;
-  }
 } */
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 4vw;
+  }
+
+  .navbar__title {
+    padding-top: 2.25%;
+    font-size: 3vw;
+  }
+  .navbar__list {
+    padding-top: 0;
+  }
+
+  .navbar__links__container > * {
+    font-size: 3vw;
+  }
+
+  figure.hover-animation {
+    flex-basis: 90%;
+  }
+}
