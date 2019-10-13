@@ -25,6 +25,10 @@ body {
   font-size: 3vw;
 }
 
+.navbar__title-mobile {
+  display: none;
+}
+
 .navbar__links__container {
   display: flex;
   flex-direction: row;
@@ -277,34 +281,46 @@ figure.hover-animation.hover h2 {
 
 /* /////////// Media queries //////////// */
 
-/* @media only screen and (max-width: 900px) {
-  .navbar__title {
-    font-size: 1.5em;
-  } */
-
-/* body {
-    background-color: lightblue;
-  }
-} */
-
 @media only screen and (max-width: 400px) {
   body {
     font-size: 4vw;
   }
 
-  .navbar__title {
-    padding-top: 2.25%;
-    font-size: 3vw;
-  }
   .navbar__list {
     padding-top: 0;
   }
 
   .navbar__links__container > * {
-    font-size: 3vw;
+    font-size: 5vw;
+  }
+
+  .navbar__title {
+    display: none;
+  }
+
+  .navbar__title-mobile {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding-top: 2%;
+    margin-left: 1%;
+    font-size: 5vw;
   }
 
   figure.hover-animation {
     flex-basis: 90%;
+  }
+
+  .label__message,
+  .label__name,
+  .label__email {
+    font-size: 4vw;
+  }
+
+  .form input {
+    font-size: 3.5vw;
+  }
+  .form button {
+    font-size: 4vw;
   }
 }
